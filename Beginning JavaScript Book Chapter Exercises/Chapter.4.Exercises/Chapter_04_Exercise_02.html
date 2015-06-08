@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chapter 4 Question 2</title>
+</head>
+<body>
+<script>
+/* 
+ 2. Modify the code of Question 1 to request the times table to be displayed from the user; 
+ the code should continue to request and display times tables until the user enters -1. 
+ Additionally, do a check to make sure that the user is entering a valid number; if the number is not valid, ask the user to re-enter it.
+*/
+ 
+function multiplyTab(timesTab,numbFirst,numbEnd) {
+    for (; numbFirst <= numbEnd; numbFirst++) {
+        document.write(timesTab + " * " + numbFirst + " = " + timesTab * numbFirst + "</br>");
+}
+}
+
+    var timesTab;
+   while ((timesTab = prompt("Enter a number for a times table",-1)) != -1) {
+        while (isNaN(timesTab) === true) {
+        timesTab = prompt(timesTab + " is not a valid number, enter again ", -1);
+        }
+    if (timesTab == -1) {
+                break;
+    }
+       multiplyTab(timesTab,1,12);
+       document.write("</br>");
+       
+}
+    
+
+    
+</script>   
+</body>
+</html>
