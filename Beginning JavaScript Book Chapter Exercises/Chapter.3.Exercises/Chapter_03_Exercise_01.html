@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chapter 3 Question 1</title>
+</head>
+<body>
+<script>
+/*1. A junior programmer comes to you with some code that appears not to work.Can you spot where he went wrong? 
+   Give him a hand and correct the mistakes.
+   
+    var userAge = prompt("Please enter your age");
+    if (userAge = 0) {;
+        alert("So you're a baby!");
+    } else if ( userAge < 0 | userAge > 200)
+        alert("I think you may be lying about your age");
+    else {
+       alert("That's a good age");
+}
+*/
+    var userAge = parseInt(prompt("Please enter your age",""));
+    
+    if (userAge == 0) {
+        alert("So you're a baby!");
+    } else if (userAge < 0 || userAge > 200) {
+        alert("I think you may be lying about your age");
+    } else {
+       alert("That's a good age");
+}
+</script>   
+</body>
+</html>
