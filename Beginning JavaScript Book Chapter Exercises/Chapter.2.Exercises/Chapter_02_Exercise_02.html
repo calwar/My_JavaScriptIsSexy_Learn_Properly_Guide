@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chapter 2 Question 2</title>
+</head>
+<body>
+<script>
+/* 2.The following code uses the prompt() function to get two numbers from the user. It
+then adds those two numbers and writes the result to the page. However, if you try out the code, you’ll discover that it doesn’t work.
+Why not? Change the code so that it does work.*/
+
+/* You need to add the parseInt function to make the code work so the numbers can make the sum when you add them together. 
+   The original code did not have the parseInt function.*/
+
+    var firstNumber = parseInt(prompt("Enter the first number",""));
+    var secondNumber = parseInt(prompt("Enter the second number",""));
+    var theTotal = firstNumber + secondNumber;
+    document.write(firstNumber + " added to " + secondNumber + " equals " + theTotal);
+    
+    
+</script>
+</body>
+</html>
